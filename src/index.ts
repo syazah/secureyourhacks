@@ -1,13 +1,12 @@
 import express from "express";
 import dotenv from "dotenv";
-import bodyParser from "body-parser";
 import cors from "cors";
 dotenv.config();
 
 //APP INITIALISATION
 const app = express();
 //MIDDLEWARES
-app.use(bodyParser());
+app.use(express.json());
 app.use(cors());
 
 //CATCH ERROR BLOCK
